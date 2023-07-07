@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="/img/favicon.svg"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <script defer src="./js/arrayProductos.js"></script>
+    <script defer src="./js/pagar.js"></script>
+    <title>Pagar</title>
+</head>
+<body>
+
+<!-- Navbar -------------------------------------------------------------------------------------------------->
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/logo.svg" class="logo" alt="El logo de Estella, un icono de una pluma dentro de un círculo">
+            </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <img class="menu-hamburguesa" src="./img/navbar-hamburger.svg" alt="Icono de menú">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active link-actual" aria-current="page" href=#hero>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=#acerca>Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=#tienda>Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=#contacto-seccion>Contacto</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href=checkout.html>
+                            <div class="carrito-boton"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Form -------------------------------------------------------------------------------------------------->
+    <div class="volver container-md">
+        <a href="checkout.html">
+            <p>< Volver</p>
+        </a>
+    </div>
+    <h2 class="pagar-titulo">Elige un medio de pago</h2>
+
+    <form data-aos="zoom-in" data-aos-duration="1000"  class="form-pagar">
+        <div class="row" id="autocompletar">
+            <p>Autocompletar formulario</p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="mb-3 container-nombre">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1 input-nombre" placeholder="Ingresa tu nombre y apellido">
+                </div>
+                <p id="error-nombre" class="error-estilos"></p>
+            </div>
+            <div class="col ">
+                <div class="mb-3 container-email">
+                    <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1 input-email" placeholder="email@ejemplo.com">
+                    <p id="error-email" class="error-estilos"></p>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3 container-direccion">
+            <label for="exampleFormControlTextarea1" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1 input-direccion" placeholder="Ingresa tu dirección">
+            <p id="error-direccion" class="error-estilos"></p>
+        </div>
+        <div class="elige-medio"><p>Elige un medio de pago</p></div>
+        <div class="mb-3 container-medio-pago">
+            <input id="medio-de-pago" type="radio" name="medio-pago" value="Tarjeta de crédito">
+            <label for="medio-de-pago">Tarjeta de crédito</label>
+
+            <input id="medio-de-pago" type="radio" name="medio-pago" value="Tarjeta de débito">
+            <label for="medio-de-pago">Tarjeta de débito</label>
+
+            <input id="medio-de-pago" type="radio" name="medio-pago" value="Transferencia">
+            <label for="medio-de-pago">Transferencia bancaria</label>
+        </div>
+        <p id="error-medio-pago" class="error-estilos"></p>
+
+        <div class="total-a-pagar">
+            <h4>Total a pagar:</h4><span></span>
+        </div>
+
+        <button type="submit" id="boton-pagar"class="btn btn-primary btn-pagar">Pagar</button>
+    </form>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+</html>

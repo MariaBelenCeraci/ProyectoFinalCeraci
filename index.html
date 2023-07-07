@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="./img/favicon.svg"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <script defer src="js/arrayProductos.js"></script>
+    <script defer src="js/main.js"></script>
+    <title>Bemariart</title>
+</head>
+<body>
+
+<!-- Navbar -------------------------------------------------------------------------------------------------->
+
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/logo.svg" class="logo" alt="">
+            </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <img class="menu-hamburguesa" src="./img/navbar-hamburger.svg" alt="Icono de menú">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active link-actual" aria-current="page" href=#hero>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=#acerca>Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=#tienda>Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=#contacto-seccion>Contacto</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href=checkout.html>
+                            <div class="carrito-boton"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -------------------------------------------------------------------------------------------------->
+
+    <header id="hero" class="hero-section container-md section-margin">
+        <div data-aos="fade-right"data-aos-offset="300" data-aos-duration="1000" class="text-portada" >
+            <h1 class="portada-h1">Ilustración digital & Diseño Gráfico</h1>
+            <p>Bienvenido a mi tienda! Aquí encontrarás una gran diversidad de productos con hermosas ilustraciones inspiradas en la naturaleza. </p>
+            <a href=#tienda>
+                <button class="cta-hero">Mi tienda</button>
+            </a>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="1000" class="img-portada-container">
+            <img class="img-portada"   src="./img/img_portada.png" alt="">
+        </div>
+    </header>
+
+<!-- Acerca de -------------------------------------------------------------------------------------------------->
+    <section id="acerca" class="section-acerca section-margin">
+        <div class="linea-acerca"></div>
+        <div class="container-acerca">
+            <div class="titulo-acerca">
+                <h5>Bemariart</h5>
+                <h2>Ilustrando la naturaleza</h2>
+                <p>La temática de mis ilustraciones se encuentra fuertemente orientada a los animales y las plantas, además de paisajes naturales.
+                </p>
+            </div>
+
+            <div class="contenido-acerca">
+                <div data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000"  class="textos-acerca">
+                    <div class="p1-acerca parrafo-acerca">
+                        <h5>Ilustración digital</h5>
+                        <p>Todas mis ilustraciones las realizo de forma digital, utilizando Adobe Photoshop y una tableta Wacom Intous M. A través del uso de una superposición de capas y pinceles con diferentes texturas, busco darles una apariencia más tradicional a mis ilustraciones.</p>
+                    </div>
+
+                    <div class="parrafo-acerca">
+                        <h5>Naturaleza</h5>
+                        <p>Uno de mis pasatiempos favoritos y ir a caminar al bosque. Los hermosos paisajes de Bariloche, donde viví toda mi vida, son una gran fuente de inspiración para mi. </p>
+                    </div>
+
+                    <div class="trabajemos-juntos">
+                        <a class="link-trabajemos" href="#">Trabajemos juntos</a>
+                        <img class="flecha-trabajemos" src="./img/arrow_white.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="img-acerca-container" data-aos="fade-down" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="linear">
+                    <img src="./img/acerca_de_img.png" alt="" class="img-acerca">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Mi tienda -------------------------------------------------------------------------------------------------->
+
+    <section id="tienda" class="section-tienda container-md section-margin">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="icono-tienda">
+            <img class="icon" src="./img/tienda_icono.svg" alt="">
+        </div>
+        <div class="titulo-tienda">
+            <h2 data-aos="zoom-in" data-aos-duration="1000">Mi tienda</h2>
+            <p data-aos="zoom-in" data-aos-duration="1000">En mi tienda podrás encontrar una gran variedad de productos, así como también podrás adquirir prints de mis ilustraciones.</p>
+            <div class="busqueda-container">
+                <div class="input-busqueda-container">
+                    <input id="input-busqueda" type="text" placeholder="Buscar un producto">
+                </div>
+                <button id="buscar" class="boton-buscar">Buscar</button>
+            </div>
+        </div>
+        <div class="grid-tienda">
+            <div class="categorias">
+                <h5>Categorías</h5>
+                <ul>
+                    <li class="vertodos"  id="vertodos">Ver todos</li>
+                    <li class="categoria" id="agenda">Agendas</li>
+                    <li class="categoria" id="bag">Bags</li>
+                    <li class="categoria" id="calendario">Calendarios</li>
+                    <li class="categoria" id="cuadro">Cuadros</li>
+                    <li class="categoria" id="remera">Remeras</li>
+                    <li class="categoria" id="taza">Tazas</li>
+                </ul>
+            </div>
+            <div class="productos-container"></div>
+        </div>
+    </section>
+
+<!-- Contacto -------------------------------------------------------------------------------------------------->
+
+    <section id="contacto-seccion" class="contacto section-margin">
+        <div class="img-contacto-container">
+            <img src="./img/img_contacto.jpg" alt="" class="img-contacto">
+        </div>
+        <form data-aos="zoom-in" data-aos-duration="1000" class="form-contacto">
+            <div class="form-texto">
+                <h2>Trabajemos juntos</h2>
+                <p>Si querés encargar una comisión, no dudes en dejar tu mensaje y consultar cualquier duda que tengas. Me pondré en contacto contigo.</p>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu nombre y apellido">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@ejemplo.com">
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-form">Enviar</button>
+        </form>
+    </section>
+
+<!-- Redes Sociales -------------------------------------------------------------------------------------------->
+
+    <section class="redes container-md section-margin">
+        <div class="redes-texto">
+            <h2>Seguime en mis redes</h2>
+            <p>En mis redes sociales publico mis nuevas ilustraciones y comparto mi proceso detrás de escena. No te lo pierdas!</p>
+        </div>
+
+        <div class="links-redes">
+            <a class="link-red" href="#">
+                <img class="icon-red" src="./img/red_facebook.svg" alt="">
+            </a>
+
+            <a class="link-red" href="#">
+                <img class="icon-red" src="./img/red_instagram.svg" alt="">
+            </a>
+
+            <a class="link-red" href="#">
+                <img class="icon-red" src="./img/red_linkedin.svg" alt="">
+            </a>
+
+            <a class="link-red" href="#">
+                <img class="icon-red" src="./img/red_tiktok.svg" alt="">
+            </a>
+        </div>
+    </section>
+
+<!-- Footer -------------------------------------------------------------------------------------------->
+
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Acerca de</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Mi tienda</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contacto</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2023 Bemariart</p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+</html>

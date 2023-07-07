@@ -1,0 +1,162 @@
+[
+    {"codigo": 4, 
+    "imagen": "img/Taza-cinco.jpg" ,
+    "nombre": "Taza Zorro Invernal", 
+    "descripcion": "350c", 
+    "precio": 2600, 
+    "categoria": "TAZA",
+    "cantidad":0
+    },
+
+    {"codigo": 5, 
+    "imagen": "img/Taza-seis.jpg",
+    "nombre": "Taza Peces Tropicales", 
+    "descripcion": "340c", 
+    "precio": 2500, 
+    "categoria": "TAZA",
+    "cantidad":0
+    },
+
+    {"codigo": 6, 
+    "imagen": "img/Taza-siete.jpg",
+    "nombre": "Taza Flamenco", 
+    "descripcion": "330c",
+    "precio": 2400, 
+    "categoria": "TAZA",
+    "cantidad":0
+    },
+
+    {"codigo": 7, 
+    "imagen": "img/Taza-ocho.jpg",
+    "nombre": "Taza Conejo", 
+    "descripcion": "340c", 
+    "precio": 2500, 
+    "categoria": "TAZA",
+    "cantidad":0
+    },
+
+    {"codigo": 8,
+    "imagen": "img/Taza-nueve.jpg",
+    "nombre": "Taza Mariposa", 
+    "descripcion": "340c",
+    "precio": 2500, 
+    "categoria": "TAZA",
+    "cantidad":0
+    },
+
+    {"codigo": 9, 
+    "imagen": "img/Agenda-uno.jpg",
+    "nombre": "Agenda Primaveral", 
+    "descripcion": "Agenda 2023, sin anillar", 
+    "precio": 4300, 
+    "categoria": "AGENDA",
+    "cantidad":0
+    },
+
+    {"codigo": 10, 
+    "imagen": "img/Agenda-dos.jpg",
+    "nombre": "Agenda Mariposas", 
+    "descripcion": "Agenda 2023, anillado", 
+    "precio": 4300, 
+    "categoria": "AGENDA",
+    "cantidad":0
+    },
+
+    {"codigo": 11, 
+    "imagen": "img/Agenda-tres.jpg",
+    "nombre": "Agenda Lobo Lunar", 
+    "descripcion": "Agenda 2023, sin anillar", 
+    "precio": 4300, 
+    "categoria": "AGENDA",
+    "cantidad":0
+    },
+
+    {"codigo": 12, 
+    "imagen": "img/Agenda-cuatro.jpg",
+    "nombre": "Agenda Ave Roja", 
+    "descripcion": "Agenda 2023, anillado",
+    "precio": 4300, 
+    "categoria": "AGENDA",
+    "cantidad":0
+    },
+
+    {"codigo": 13, 
+    "imagen": "img/Bag-uno.jpg",
+    "nombre": "Bag Mariposa", 
+    "descripcion": "Ideal para monederos", 
+    "precio": 4100, 
+    "categoria": "BAG",
+    "cantidad":0
+    },
+
+    {"codigo": 14, 
+    "imagen": "img/Bag-dos.jpg",
+    "nombre": "Bag Primaveral", 
+    "descripcion": "Ideal para notebooks", 
+    "precio": 6250, 
+    "categoria": "BAG",
+    "cantidad":0
+    },
+
+    {"codigo": 15, 
+    "imagen": "img/Bag-tres.jpg",
+    "nombre": "Bag Zorro", 
+    "descripcion": "Ideal para notebooks", 
+    "precio": 6250, 
+    "categoria": "BAG",
+    "cantidad":0
+    },
+
+    {"codigo": 16, 
+    "imagen": "img/Calendario-uno.jpg",
+    "nombre": "Calendario Cocodrilo", 
+    "descripcion": "Calendario horizontal", 
+    "precio": 5300, 
+    "categoria": "CALENDARIO",
+    "cantidad":0
+    },
+
+    {"codigo": 17, 
+    "imagen": "img/Calendario-dos.jpg",
+    "nombre": "Calendario Pez", 
+    "descripcion": "Celndario vertical", 
+    "precio": 5300, 
+    "categoria": "CALENDARIO",
+    "cantidad":0
+    },
+
+    {"codigo": 18, 
+    "imagen": "img/Calendario-tres.jpg",
+    "nombre": "Calendario Ciervo", 
+    "descripcion": "Celndario vertical", 
+    "precio": 5300, 
+    "categoria": "CALENDARIO",
+    "cantidad":0
+    },
+
+    {"codigo": 19, 
+    "imagen": "img/Cuadro-uno.jpg",
+    "nombre": "Cuadro Bosque", 
+    "descripcion": "30 x 40 cm", 
+    "precio": 7250, 
+    "categoria": "CUADRO",
+    "cantidad":0},
+
+    {"codigo": 20, 
+    "imagen": "img/Cuadro-dos.jpg",
+    "nombre": "Cuadro Medusas", 
+    "descripcion": "40 x 50 cm", 
+    "precio": 7250, 
+    "categoria": "CUADRO",
+    "cantidad":0
+    },
+
+    {"codigo": 21, 
+    "imagen": "img/remera-uno.png",
+    "nombre": "Remera flamenco", 
+    "descripcion": "Talle a elección", 
+    "precio": 9250, 
+    "categoria": "REMERA",
+    "cantidad":0
+    }
+]
